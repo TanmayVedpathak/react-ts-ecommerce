@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+# E-commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A learning project built to explore and understand modern web development using React, TypeScript, and Tailwind CSS. This e-commerce platform was created as a hands-on approach to learn state management, filtering logic, and responsive design principles.
 
-Currently, two official plugins are available:
+## 🎯 Learning Objectives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Implementing TypeScript with React
+- Building responsive layouts with Tailwind CSS
+- Managing complex state and filters
+- Handling API integrations
+- Writing clean, maintainable code
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Product Management
 
-- Configure the top-level `parserOptions` property like this:
+- **Advanced Search & Filtering**
+  - Dynamic search functionality for products
+  - Price range filter with min/max values
+  - Category-based product filtering
+  - Product-specific attribute filters
+  - Multi-filter support for refined searches
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### User Experience
+
+- **Pagination**
+  - Smooth page navigation
+  - Configurable items per page
+  - Load more functionality
+
+### Content
+
+- **Static Blog**
+
+  - Product related articles
+  - Shopping guides
+  - Industry news
+
+- **Seller Information**
+  - Detailed seller profiles
+  - Store ratings and reviews
+  - Contact information
+
+## 🛠 Tech Stack
+
+- React 18
+- TypeScript
+- Tailwind CSS
+- Node.js
+- npm/yarn
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/TanmayVedpathak/react-ts-ecommerce.git
+cd react-ts-ecommerce
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Install dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
+# or
+yarn install
 ```
+
+3. **Install and Configure Tailwind CSS**
+
+```bash
+# Install Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer
+# or
+yarn add -D tailwindcss postcss autoprefixer
+
+# Generate Tailwind CSS config file
+npx tailwindcss init -p
+```
+
+4. **Run development server**
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The application will start at `http://localhost:3000`
